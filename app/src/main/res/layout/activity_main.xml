@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/rectangle1"
+        android:layout_width="432dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/rectangle_profile1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/ll_scheduleBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:ignore="MissingConstraints,UselessLeaf"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/arrow_left"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserratbold"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:text="Maintenance Schedule"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageButton
+            android:id="@+id/btn_notif"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/notif"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="50dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_odometer"
+        android:layout_width="160dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_scheduleBar"
+        app:srcCompat="@drawable/odometer"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/ll_kmRectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_odometer"
+        tools:ignore="MissingConstraints,UselessLeaf"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/et_km1"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:background="@drawable/costum_edittext"
+            android:textSize="60sp"
+            android:fontFamily="@font/montserratregular"
+            android:textColorHint="#b9b9b9"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"
+            android:paddingStart="15dp"
+            tools:ignore="Autofill,TextFields" />
+
+        <TextView
+            android:id="@+id/et_km2"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:background="@drawable/costum_edittext"
+            android:layout_marginStart="5dp"
+            android:textSize="60sp"
+            android:fontFamily="@font/montserratregular"
+            android:textColorHint="#b9b9b9"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"
+            android:paddingStart="15dp"
+            tools:ignore="Autofill,TextFields" />
+
+        <TextView
+            android:id="@+id/et_km3"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:background="@drawable/costum_edittext"
+            android:layout_marginStart="5dp"
+            android:textSize="60sp"
+            android:fontFamily="@font/montserratregular"
+            android:textColorHint="#b9b9b9"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"
+            android:paddingStart="15dp"
+            tools:ignore="Autofill,TextFields" />
+
+        <TextView
+            android:id="@+id/et_km4"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:background="@drawable/costum_edittext"
+            android:layout_marginStart="5dp"
+            android:textSize="60sp"
+            android:fontFamily="@font/montserratregular"
+            android:textColorHint="#b9b9b9"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"
+            android:paddingStart="15dp"
+            tools:ignore="Autofill,TextFields" />
+
+        <TextView
+            android:id="@+id/et_km5"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:background="@drawable/costum_edittext"
+            android:layout_marginStart="5dp"
+            android:textSize="60sp"
+            android:fontFamily="@font/montserratregular"
+            android:textColorHint="#b9b9b9"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"
+            android:paddingStart="15dp"
+            tools:ignore="Autofill,TextFields" />
+
+        <TextView
+            android:id="@+id/et_km6"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:background="@drawable/costum_edittext"
+            android:layout_marginStart="5dp"
+            android:textSize="60sp"
+            android:fontFamily="@font/montserratregular"
+            android:textColorHint="#b9b9b9"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"
+            android:paddingStart="15dp"
+            tools:ignore="Autofill,TextFields" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_kmNumber"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="25dp">
+
+        <TextView
+            android:id="@+id/tv_km1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="245dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.168"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_odometer"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_km2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="245dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="7"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.168"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_commun2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_km3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="245dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.168"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_commun2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_km4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="245dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.168"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_commun2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_km5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="245dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="9"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.168"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_commun2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_km6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="245dp"
+            android:fontFamily="@font/montserratbold"
+            android:text="8"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.168"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_commun2"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_prediction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserratbold"
+        android:paddingStart="100dp"
+        android:paddingEnd="100dp"
+        android:text="Oil Change Prediction"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_kmRectangle"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/tv_datePrediction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserratregular"
+        android:paddingStart="100dp"
+        android:paddingEnd="100dp"
+        android:text="23 November 2023"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_prediction"
+        tools:ignore="MissingConstraints"/>
+
+
+    <TextView
+        android:id="@+id/rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="258dp"
+        android:background="@drawable/rectangle_loading_regist"
+        android:backgroundTint="#f5f5f5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_scheduleBar"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_searchSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/costum_edittext"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="40dp"
+        android:padding="15dp"
+        android:hint="Find your schedule"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserratregular"
+        android:textColorHint="#b9b9b9"
+        android:textColor="@color/black"
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/search"
+        app:layout_constraintTop_toBottomOf="@+id/tv_datePrediction"
+        tools:ignore="Autofill,TextFields" />
+
+    <TextView
+        android:id="@+id/tv_date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratbold"
+        android:text="Friday, 17 November 2023"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_searchSchedule"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_date2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="4 days left"
+        android:textAlignment="textStart"
+        android:textColor="#b8b8b8"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_rectangleSchedule1"
+        android:layout_width="155dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="48dp"
+        android:background="@drawable/rectangle_schedule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_motorSchedule1"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="58dp"
+        android:background="@drawable/motor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_onOff1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/on_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_textSchedule1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="58dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Fix Si Merah’s \nBody"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_motorSchedule1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_timeSchedule1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="58dp"
+        android:background="@drawable/time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textSchedule1_1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_textSchedule1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="88dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Friday, 17 November 2023"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_textSchedule1_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="88dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="4 days left"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textSchedule1_2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_rectangleSchedule2"
+        android:layout_width="155dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="213dp"
+        android:background="@drawable/rectangle_schedule"
+        android:backgroundTint="#FFD573"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_motorSchedule2"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="220dp"
+        android:backgroundTint="#FF8900"
+        android:background="@drawable/motor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_onOff2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="315dp"
+        android:background="@drawable/on_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_textSchedule2_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="222dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Fix Si Merah’s \nBody"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_motorSchedule1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_timeSchedule2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="222dp"
+        android:background="@drawable/time2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textSchedule1_1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_textSchedule2_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="252dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Friday, 17 November 2023"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_textSchedule2_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="252dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="4 days left"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textSchedule2_2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_date3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratbold"
+        android:text="Saturday, 18 November 2023"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rectangleSchedule1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_date4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="5 days left"
+        android:textAlignment="textStart"
+        android:textColor="#b8b8b8"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_rectangleSchedule3"
+        android:layout_width="155dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="48dp"
+        android:background="@drawable/rectangle_schedule"
+        android:backgroundTint="#6B2434"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_motorSchedule3"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="58dp"
+        android:backgroundTint="#D60909"
+        android:background="@drawable/motor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_onOff3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/on_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_textSchedule3_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="58dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Fix Si Merah’s \nBody"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_motorSchedule3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_timeSchedule3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="58dp"
+        android:background="@drawable/time3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textSchedule3_1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_textSchedule3_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="88dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Friday, 17 November 2023"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_textSchedule3_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="88dp"
+        android:fontFamily="@font/montserratregular"
+        android:text="4 days left"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_textSchedule3_2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/rectangleButton"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="312dp"
+        android:background="@drawable/rectangle_buttonbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_searchSchedule"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="343dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/primary"
+        android:background="@drawable/costum_button"
+        android:text="Create a Schedule"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/montserratbold"
+        android:layout_marginTop="330dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_searchSchedule"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
